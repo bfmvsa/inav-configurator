@@ -248,7 +248,7 @@
         "message": "Stopbits"
     },
     "sitlSerialPort": {
-        "message": "Serial receiver/Proxy FC is connectected to host's serial port"
+        "message": "Serial receiver/Proxy FC is connected to host's serial port"
     },
     "sitlSerialUART": {
         "message": "Serial receiver is configured on SITL's UART"
@@ -263,7 +263,7 @@
         "message": "SITL (Software in the loop) allows to run INAV completely in software on the PC without using a flight controller and simulate complete FPV flights. For this, INAV is compiled with a normal PC compiler. The sensors are replaced by data provided by a simulator.<br/>Currently supported are:<br/><ul><li><a href=\"https://www.realflight.com\" target=\"_blank\">RealFlight</a><br/></li><li><a href=\"https://www.x-plane.com\" target=\"_blank\">X-Plane</a></li></ul>"
     },
     "sitlProfilesHelp": {
-        "message": "Profiles are saved locally. The profiles contain not only all data of this tab, but also the configuration file (\"EEPROM\") of INAV itself. <br><span style=\"color: red\">Note:</span><br>Standard profiles can't be overwriten. To save your changes, create a new profile. "
+        "message": "Profiles are saved locally. The profiles contain not only all data of this tab, but also the configuration file (\"EEPROM\") of INAV itself. <br><span style=\"color: red\">Note:</span><br>Standard profiles can't be overwritten. To save your changes, create a new profile. "
     },
     "sitlEnableSimulatorHelp": {
         "message": "If this option is deactivated, only UARTS (MSP/Configurator) can be used. Useful to configure INAV without having to start the simulator."
@@ -423,7 +423,7 @@
         "message": "This firmware version is <span style=\"color: red\">not supported</span>. This version of Configurator supports firmware from $1 to $2 (excluded)"
     },
     "firmwareVariantNotSupported": {
-        "message": "This firmware variant is <span style=\"color: red\">not supported</span>. Please upgrade to INAV firmware. Use CLI for backup before flashing.  CLI backup/restore procedure is in the documention."
+        "message": "This firmware variant is <span style=\"color: red\">not supported</span>. Please upgrade to INAV firmware. Use CLI for backup before flashing.  CLI backup/restore procedure is in the documentation."
     },
 
     "tabSwitchConnectionRequired": {
@@ -562,7 +562,7 @@
         "message": "Calibrate Accelerometer"
     },
     "initialSetupCalibrateAccelText": {
-        "message": "6-point calibration of accelerometer. Go to wiki for iNav and follow Sensor Calibration for more infomation"
+        "message": "6-point calibration of accelerometer. Go to wiki for iNav and follow Sensor Calibration for more information"
     },
     "initialSetupButtonCalibrateMag": {
         "message": "Calibrate Magnetometer"
@@ -1542,7 +1542,7 @@
         "message": "Main gyro filter cutoff frequency"
     },
     "pidTuning_gyro_main_lpf_hz_help": {
-        "message": "Higher values offer lower delay but more noise. Lower values offer less noise, but more dalay on the gyro processing"
+        "message": "Higher values offer lower delay but more noise. Lower values offer less noise, but more delay on the gyro processing"
     },
     "pidTuning_MatrixFilterMinFrequency": {
         "message": "Matrix Filter Min Frequency"
@@ -1623,7 +1623,7 @@
         "message": "Top D-Boost at acceleration [dps^2]"
     },
     "pidTuning_d_boost_max_at_acceleration_help": {
-        "message": "D-Boost is fully active when angular acceleration (either detected by gyro or rate target) reached given acceleration. Between 0 and this value, D-Boost factor is scaled lineary"
+        "message": "D-Boost is fully active when angular acceleration (either detected by gyro or rate target) reached given acceleration. Between 0 and this value, D-Boost factor is scaled linear"
     },
     "pidTuning_d_boost_gyro_delta_lpf_hz": {
         "message": "D-Boost gyro LPF"
@@ -2671,7 +2671,7 @@
         "message": "Delay for turning off the Motors during Failsafe [For deciseconds (ds):1 = 0.1 sec.]"
     },
     "failsafeOffDelayHelp": {
-        "message": "Time to stay in landing mode untill the motors are turned off and the craft is disarmed"
+        "message": "Time to stay in landing mode until the motors are turned off and the craft is disarmed"
     },
     "failsafeSubTitle1": {
         "message": "Procedure"
@@ -2800,13 +2800,13 @@
         "message": "Roll/Pitch acceleration limit"
     },
     "axisAccelerationLimitRollPitchHelp": {
-        "message": "This is maximum angular acceleration rate pilot is allowed to require from UAV. UAV should be able to satisfy this accelaration rate. As a rule of thumb, the bigger the UAV, to lower acceleration it can handle"
+        "message": "This is maximum angular acceleration rate pilot is allowed to require from UAV. UAV should be able to satisfy this acceleration rate. As a rule of thumb, the bigger the UAV, to lower acceleration it can handle"
     },
     "axisAccelerationLimitYaw": {
         "message": "Yaw acceleration limit"
     },
     "axisAccelerationLimitYawHelp": {
-        "message": "This is maximum angular acceleration rate pilot is allowed to require from UAV. UAV should be able to satisfy this accelaration rate. As a rule of thumb, the bigger the UAV, to lower acceleration it can handle"
+        "message": "This is maximum angular acceleration rate pilot is allowed to require from UAV. UAV should be able to satisfy this acceleration rate. As a rule of thumb, the bigger the UAV, to lower acceleration it can handle"
     },
     "pidTuningTPAHelp": {
         "message": "Throttle PID Attenuation factor. PID gains will be reduced lineary starting from 0 at TPA Breakpoint (Throttle) to TPA factor at max throttle"
@@ -3098,7 +3098,7 @@
         "message": "Max. CRUISE speed"
     },
     "posholdMaxManualSpeedHelp": {
-        "message": "Maximum horizonal velocity allowed for pilot manual control during POSHOLD/CRUISE mode"
+        "message": "Maximum horizontal velocity allowed for pilot manual control during POSHOLD/CRUISE mode"
     },
     "posholdMaxClimbRate": {
         "message": "Max. navigation climb rate [cm/s]"
@@ -3356,7 +3356,7 @@
         "message": "Pitch to throttle ratio"
     },
     "pitchToThrottleHelp": {
-        "message": "In navigation modes, each degree of climb will add this many units to the cruise throttle. Conversely, each degree of diving will substract from it."
+        "message": "In navigation modes, each degree of climb will add this many units to the cruise throttle. Conversely, each degree of diving will subtract from it."
     },
     "minThrottleDownPitch": {
         "message": "Min Throttle Down Pitch"
@@ -3660,13 +3660,13 @@
         "message": "Maximum number of waypoint elements on screen."
     },
     "osd_hud_wp_disp_help": {
-        "message": "Number of Wayponts to show on screen. 0 disables this feature."
+        "message": "Number of Waypoints to show on screen. 0 disables this feature."
     },
     "osd_camera_uptilt": {
         "message": "Camera uptilt"
     },
     "osd_camera_uptilt_help": {
-        "message": "Set the camera uptilt for the FPV camera in degres, positive is up, negative is down, relative to the horizontal. Used for correct display of HUD items and AHI (when enabled)."
+        "message": "Set the camera uptilt for the FPV camera in degrees, positive is up, negative is down, relative to the horizontal. Used for correct display of HUD items and AHI (when enabled)."
     },
     "osd_camera_fov_h": {
         "message": "Camera Horizontal FOV"
@@ -3713,7 +3713,7 @@
         "message": "General Aviation"
     },
     "osdUnitGATip": {
-        "message": "Use GA standard units (non-SI): Nautical Miles, Feet, Knots, Celcius."
+        "message": "Use GA standard units (non-SI): Nautical Miles, Feet, Knots, Celsius."
     },
     "osd_rssi_alarm": {
         "message": "RSSI (%)"
@@ -4991,7 +4991,7 @@
         "message": "D-term Stage 2 LPF cutoff frequency"
     },
     "dterm_lpf2_hz_help": {
-        "message": "Lowpass cutoff filter for D-term on ROLL and PITCH axises. 0 mean filter is disabled"
+        "message": "Lowpass cutoff filter for D-term on ROLL and PITCH axis. 0 mean filter is disabled"
     },
     "tabFilteringAdvanced": {
         "message": "Other filters"
@@ -5174,7 +5174,7 @@
         "message": "Control Profile will use same index as Mixer Profile index"
     },
     "mixer_pid_profile_linking_hint": {
-        "message": "mixer_pid_profile_linking: Enable on both Mixer Profile if you want Control Profile switching handled by Mixer Profile switching(Recommend in vtol/mixed plaform type setup)"
+        "message": "mixer_pid_profile_linking: Enable on both Mixer Profile if you want Control Profile switching handled by Mixer Profile switching(Recommend in vtol/mixed platform type setup)"
     },
     "blackboxFields": {
         "message": "Blackbox fields"
@@ -5823,25 +5823,25 @@
         "message": "Snappiness"
     },
     "ezTuneSnappinessTips": {
-        "message": "Helps to have a snappy stick feeling. Whenever you do a fast stick movement, high Snappiness will accelerate the drone response. Both when you start and stop the manouver. Try different values to find the one that suits you best."
+        "message": "Helps to have a snappy stick feeling. Whenever you do a fast stick movement, high Snappiness will accelerate the drone response. Both when you start and stop the maneuver. Try different values to find the one that suits you best."
     },
     "ezTuneFilterHzTips": {
-        "message": "This sets the base cutoff frequency for all INAV gyro and D-term filters. Higher values will result in lower filter delay and better stabilization, but more noise will go through the filters and motors will get hot, UAV might oscillate and be unfyable. Your goal is to increase this value as high as possible before any negative effects appear. Negative effects include: hot motors, audible osciallations, UAV rapidly shaking, UAV gaining altitude by itself. Usual starting points for 'Filter Hz' are: <strong>3-inch props</strong>: 90, <strong>5-inch props</strong>: 110, <strong>7-inch props</strong>: 90, <strong>10-inch props</strong>: 75, <strong>12-inch props</strong>: 60. Use Blackbox and common sense to find a value that is most suited for your UAV."
+        "message": "This sets the base cutoff frequency for all INAV gyro and D-term filters. Higher values will result in lower filter delay and better stabilization, but more noise will go through the filters and motors will get hot, UAV might oscillate and be unfyable. Your goal is to increase this value as high as possible before any negative effects appear. Negative effects include: hot motors, audible oscillations, UAV rapidly shaking, UAV gaining altitude by itself. Usual starting points for 'Filter Hz' are: <strong>3-inch props</strong>: 90, <strong>5-inch props</strong>: 110, <strong>7-inch props</strong>: 90, <strong>10-inch props</strong>: 75, <strong>12-inch props</strong>: 60. Use Blackbox and common sense to find a value that is most suited for your UAV."
     },
     "ezTuneAxisRatioTips": {
         "message": "Describes the weight/moment of inertia distribution of your UAV. The longer the frame (more mass on the front-back axis) more Axis Ratio is requires. Perfect X frame is ratio 100. Most modern frames should fit somewhere between 110 and 130. Default 110 is a good starting point."
     },
     "ezTuneResponseTips": {
-        "message": "This setting defines how fast the UAV will react to stick movements and gyro signal. Higher values will result in faster reaction, but also in more overshoots and oscillations. If UAV feels sluggish or has a slow wobble, increase the Response. If it has hot motors, audibly osciallates, overshoots or feels too nervous, decrease the Response. Most modern quads should beefy motors will fly best with Response below 80. Should be tuned together with Damping. It is a P-term equivalent."
+        "message": "This setting defines how fast the UAV will react to stick movements and gyro signal. Higher values will result in faster reaction, but also in more overshoots and oscillations. If UAV feels sluggish or has a slow wobble, increase the Response. If it has hot motors, audibly oscillates, overshoots or feels too nervous, decrease the Response. Most modern quads should beefy motors will fly best with Response below 80. Should be tuned together with Damping. It is a P-term equivalent."
     },
     "ezTuneDampingTips": {
-        "message": "Describes the stengths of a force that opposes any rotation speed change. It dampens roll and pitch acceleration and causes smoother and more stable flight. Your task during tuning is to find out how much you can increase it before any negative symptoms appear: hot motors, audible osciallations, overshoot. Most modern quads should accept 'Damping' up to 150-180. It is a D-term equivalent."
+        "message": "Describes the strengths of a force that opposes any rotation speed change. It dampens roll and pitch acceleration and causes smoother and more stable flight. Your task during tuning is to find out how much you can increase it before any negative symptoms appear: hot motors, audible oscillations, overshoot. Most modern quads should accept 'Damping' up to 150-180. It is a D-term equivalent."
     },
     "ezTuneStabilityTips": {
         "message": "Defines long-term stabilization strength. Most modern quads should tolerate 'Stability' even up to 120-130. Usually does not have to be tuned at all. If UAV suffers from heavy propwash during vertical descent, lowering 'Stability' might help. It is a I-term equivalent"
     },
     "ezTuneAggressivenessTips": {
-        "message": "Defines how fast your UAV will react to fast stick movements. Higher 'Aggressiveness' results in snappier fast manouvers. It does not affect stabilization, only stick feeling. It is a FF-term equivalent."
+        "message": "Defines how fast your UAV will react to fast stick movements. Higher 'Aggressiveness' results in snappier fast maneuvers. It does not affect stabilization, only stick feeling. It is a FF-term equivalent."
     },
     "ezTuneRateTips": {
         "message": "Defines how fast your UAV will rotate around roll, pitch and yaw axis. Higher 'Rate' results in faster rotation. Value of 0 is the equivalent of 300dps, 100 is the equivalent of 600dps, 200 is the equivalent of 900dps."
