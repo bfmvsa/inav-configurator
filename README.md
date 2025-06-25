@@ -24,12 +24,12 @@ everything, the hardware is not working, or you have any other _support_ problem
 ### Windows
 
 1. Visit [release page](https://github.com/iNavFlight/inav-configurator/releases)
-2. Download Configurator for Windows platform (ia32 or win64 is present)
+2. Download Configurator for Windows platform (ia32 or x64 is present)
 3. Install
     * Extract ZIP archive and run the INAV Configurator app from the unpacked folder
     * OR just use the setup program `INAV-Configurator_win32_arch_x.y.z.exe`, **arch** is your computer architecture (ia32 (32bit) or x64 (64bit)), **x.y.z** is the INAV Configurator version number.
 
-4.  Configurator is not signed, so you have to allow Windows to run untrusted applications. There might be a monit for it during the first run
+4.  Configurator is not signed, so you have to allow Windows to run untrusted applications. There might be a warning for it during the first run
 
 ### Linux
 
@@ -39,7 +39,7 @@ everything, the hardware is not working, or you have any other _support_ problem
    *  **.deb** is the Debian/Ubuntu installation file. Just download and install using `sudo apt install /path/to/INAV-Configurator_linux_x64_x.y.z.deb` or open it with a package manager (e.g. via the File Manager)
    *  **.zip** is a universal archive. Download and continue with these instructions to install
 3. Change to the directory containing the downloaded **zip** file
-4. download [this](https://raw.githubusercontent.com/iNavFlight/inav-configurator/master/assets/linux/inav-configurator.desktop) file to the same directory. Its filename should be `inav-configurator.desktop`.
+4. Download the `inav-configurator.desktop` file from the `assets/linux/` directory in the repository to the same directory.
 5. Extract **zip** archive
 ```
 unzip INAV-Configurator_linux_arch_x.y.z.zip -d /tmp/
@@ -82,10 +82,10 @@ For local development, the **node.js** build system is used.
 
 1. Install node.js
 1. From the project folder run `yarn install` and then `npm install`
-1. To build the  and start the configurator:
+1. To build and start the configurator:
     - Run `npm start`.
 
-To build the App run `npm run make` to build for your platform.
+To build the app run `npm run make` to build for your platform.
 
 Options:
 * Architecture: --arch  - Allowed values are: "ia32", "x64", "armv7l", "arm64", "universal", or "mips64el". 
@@ -98,19 +98,19 @@ Tested architectures:
 - Linux: x64 and armv7l
 - MacOS: x64 and arm64
 
-To build the setup program for windows, you have to install [WiX Toolset V3](https://github.com/wixtoolset/wix3/releases) and add the `bin` folder to you `PATH`, e.g.
+To build the setup program for windows, you have to install [WiX Toolset V3](https://github.com/wixtoolset/wix3/releases) and add the `bin` folder to your `PATH`, e.g.
 ```C:\Program Files (x86)\WiX Toolset v3.14\bin```
 
 To build deb and rpm packages for Linux, you have to install the following packages: 
 - Ubuntu/Debian: `dpkg, fakeroot, rpm, build-essential, libudev-dev`
-- OpenSuse/Fedora: `dpkg, fakeroot, rpmbuild, systemd-devel, devel-basis (zypper install -t pattern devel_basis), zip`
+- openSUSE/Fedora: `dpkg, fakeroot, rpmbuild, systemd-devel, devel-basis (zypper install -t pattern devel_basis), zip`
 
 Example (note the double -- ):
 ```npm run make -- --arch="x64"```
 
 ### Running with debug | Inspector
 
-To be able to open Inspector, set environment variable `NODE_ENV` to `development` or set the flag directly when run `npm start`:
+To be able to open Inspector, set environment variable `NODE_ENV` to `development` or set the flag directly when running `npm start`:
 
 ```NODE_ENV=development npm start``` or ```$env:NODE_ENV="development" | npm start``` for Windows PowerShell
 
@@ -119,7 +119,7 @@ Or use vscode and start a debug session `Debug Configurator` (Just hit F5!)
 ## Different map providers
 
 INAV Configurator 2.1 allows you to choose between OpenStreetMap, Bing Maps (Aerial View), and MapProxy map providers.
-INAV Configurator is shipped **WITHOUT** API key for Bing Maps. That means: every user who wants to use Bing Maps has to create their own account, agree to all _Terms and Conditions_ required by Bing Maps, and configure INAV Configurator by himself.
+INAV Configurator is shipped **WITHOUT** API key for Bing Maps. That means: every user who wants to use Bing Maps has to create their own account, agree to all _Terms and Conditions_ required by Bing Maps, and configure INAV Configurator by themselves.
 
 ### How to choose a Map provider
 
@@ -131,7 +131,7 @@ INAV Configurator is shipped **WITHOUT** API key for Bing Maps. That means: ever
 ### How to get the Bing Maps API key
 
 > On May 21, 2024 Microsoft announced that Bing Maps for Enterprise is deprecated and will be retired. Starting from that date
-> new users are unable to get api keys in Bing Maps Dev Center. 
+> new users are unable to get API keys in Bing Maps Dev Center.
 > 
 > Enterprise account customers can continue to use Bing Maps for Enterprise services until **June 30th, 2028**.
 > 
@@ -164,7 +164,7 @@ INAV provides the font images so that custom fonts can be created for your perso
 
 ### WebGL
 
-Make sure Settings -> System -> "User hardware acceleration when available" is checked to achieve the best performance
+Make sure Settings -> System -> "Use hardware acceleration when available" is checked to achieve the best performance
 
 ## Issue trackers
 
